@@ -1,2 +1,2 @@
 # tdudz.github.io
-website
+personal website of mine, can be found at tomdudzik.me
