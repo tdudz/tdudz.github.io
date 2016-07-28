@@ -4,11 +4,11 @@ personal website of mine, can be found at tomdudzik.me
 current: birds
 
 old sites:
--big blue
+* big blue
 
 dependencies:
--three.js
--fontawesome
+* three.js
+* fontawesome
 
 started: 7/25/16
 
