@@ -21,7 +21,7 @@
 				birds = [];
 				boids = [];
 
-				for ( var i = 0; i < 20; i ++ ) {
+				for ( var i = 0; i < 25; i ++ ) {
 
 					boid = boids[ i ] = new Boid();
 					boid.position.x = Math.random() * 400 - 200;
