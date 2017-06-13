@@ -120,7 +120,7 @@ html, body {
 #p2 { 
 	color:black;
 	background-color: white;
-  min-height: 3850px; 
+  min-height: 4100px; 
   height: 100%; 
   margin: 0 auto; 
   width: 100%; 
@@ -181,7 +181,7 @@ html, body {
   left: 50%;
   margin-left: -500px;
   position: absolute;
-  top:250px;
+  top:150px;
   width: 1000px;
   height: auto;
   display: table-cell;
@@ -216,6 +216,14 @@ html, body {
   vertical-align: middle;
   margin-top: -20px;
 }
+#img-philips-shield {
+  position: relative;
+  width: 300px;
+  height: auto;
+  line-height: 350px;
+  vertical-align: middle;
+  margin-top: -20px;
+}
 #img-pebble2 {
   position: relative;
   width: 150px;
@@ -227,6 +235,15 @@ html, body {
 #logo-pebble { 
   position: relative;
   width: 250px;
+  height: auto;
+  line-height: 350px;
+  vertical-align: middle;
+  margin-top: -20px;
+  margin-right: -10px;
+}
+#logo-philips { 
+  position: relative;
+  width: 230px;
   height: auto;
   line-height: 350px;
   vertical-align: middle;
