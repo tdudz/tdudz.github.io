@@ -7,6 +7,6 @@ dependencies:
 
 started: 7/25/16
 
-updated: 6/13/17
+updated: 12/30/17
 
-todo: alignment on mobile, disappearing scroll indication arrow
+todo: disappearing scroll indication arrow
