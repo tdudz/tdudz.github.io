@@ -120,7 +120,7 @@ html, body {
 #p2 { 
 	color:black;
 	background-color: white;
-  min-height: 4550px; 
+  min-height: 4950px; 
   height: 100%; 
   margin: 0 auto; 
   width: 100%; 
@@ -288,7 +288,6 @@ html, body {
   vertical-align: middle;
   margin-top: -40px;
 }
-
 
 .footer {
   bottom:0px;
