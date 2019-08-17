@@ -1,5 +1,5 @@
 # tdudz.github.io
-personal website of mine, can be found at tomdudzik.me
+personal website of mine, can be found at tomdudzik.com (previously tomdudzik.me)
 
 dependencies:
 * `three.js`
@@ -7,6 +7,6 @@ dependencies:
 
 started: 7/25/16
 
-updated: 7/11/19
+updated: 8/17/19
 
 todo: disappearing scroll indication arrow
