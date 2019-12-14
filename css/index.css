@@ -120,7 +120,7 @@ html, body {
 #p2 { 
 	color:black;
 	background-color: white;
-  min-height: 4950px; 
+  min-height: 5350px; 
   height: 100%; 
   margin: 0 auto; 
   width: 100%; 
@@ -240,6 +240,24 @@ html, body {
   vertical-align: middle;
   margin-top: -20px;
   margin-right: -10px;
+}
+#logo-biomim { 
+  position: relative;
+  width: 330px;
+  height: auto;
+  line-height: 350px;
+  vertical-align: middle;
+  margin-top: -20px;
+  margin-right: -10px;
+}
+#img-mc { 
+  position: relative;
+  width: 150px;
+  height: auto;
+  line-height: 350px;
+  vertical-align: middle;
+  margin-top: -20px;
+  margin-left: 5px;
 }
 #logo-philips { 
   position: relative;
