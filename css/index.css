@@ -1,18 +1,18 @@
 @font-face {
-font-family: GothamBold;
-src: url("../fonts/Gotham/GothamHTF-Bold.otf") format("opentype");
+  font-family: GothamBold;
+  src: url("../fonts/Gotham/GothamHTF-Bold.otf") format("opentype");
 }
 @font-face {
-font-family: Gotham;
-src: url("../fonts/Gotham/GothamHTF-Black.otf") format("opentype");
+  font-family: Gotham;
+  src: url("../fonts/Gotham/GothamHTF-Black.otf") format("opentype");
 }
 @font-face {
-font-family: GothamThin;
-src: url("../fonts/Gotham/GothamHTF-Thin.otf") format("opentype");
+  font-family: GothamThin;
+  src: url("../fonts/Gotham/GothamHTF-Thin.otf") format("opentype");
 }
 @font-face {
-font-family: GothamLight;
-src: url("../fonts/Gotham/GothamHTF-Light.otf") format("opentype");
+  font-family: GothamLight;
+  src: url("../fonts/Gotham/GothamHTF-Light.otf") format("opentype");
 }
 
 
@@ -25,65 +25,65 @@ html, body {
 }
 
 #home-external-nav {
-    color: #aaa;
-    font-size: 1.5em;
+  color: #aaa;
+  font-size: 1.5em;
 }
 
 #home-external-nav a{
-    color: #aaa;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    text-decoration: none;
+  color: #aaa;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
 }
 
 #home-external-nav a:active{
-    color: #aaa;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    text-decoration: none;
+  color: #aaa;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
 }
 
 #home-external-nav a:visited{
-    color: #aaa;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    text-decoration: none;
+  color: #aaa;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
 }
 
 #home-external-nav a:hover{
-    color: #333;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-     text-decoration: none;
+  color: #333;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
 }
 
 #home-external-nav i{
-    margin: 0;
-    height: 15px;
+  margin: 0;
+  height: 15px;
 }
 
 /* BODY */
 #p1 { 
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    z-index: 100;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    min-width: 320px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  min-width: 320px;
 }
 
 #p1 h1 {
@@ -120,7 +120,7 @@ html, body {
 #p2 { 
 	color:black;
 	background-color: white;
-  min-height: 5350px; 
+  min-height: 5800px; 
   height: 100%; 
   margin: 0 auto; 
   width: 100%; 
