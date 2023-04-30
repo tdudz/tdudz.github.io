@@ -2,26 +2,30 @@
   font-family: GothamBold;
   src: url("../fonts/Gotham/GothamHTF-Bold.otf") format("opentype");
 }
+
 @font-face {
   font-family: Gotham;
   src: url("../fonts/Gotham/GothamHTF-Black.otf") format("opentype");
 }
+
 @font-face {
   font-family: GothamThin;
   src: url("../fonts/Gotham/GothamHTF-Thin.otf") format("opentype");
 }
+
 @font-face {
   font-family: GothamLight;
   src: url("../fonts/Gotham/GothamHTF-Light.otf") format("opentype");
 }
 
 
-html, body {
+html,
+body {
   font-family: 'GothamLight', sans-serif;
-	height: 100%;
-	min-height: 100%;
-	border:0px;
-	margin:0px;
+  height: 100%;
+  min-height: 100%;
+  border: 0px;
+  margin: 0px;
 }
 
 #home-external-nav {
@@ -29,7 +33,7 @@ html, body {
   font-size: 1.5em;
 }
 
-#home-external-nav a{
+#home-external-nav a {
   color: #aaa;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -38,7 +42,7 @@ html, body {
   text-decoration: none;
 }
 
-#home-external-nav a:active{
+#home-external-nav a:active {
   color: #aaa;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -47,7 +51,7 @@ html, body {
   text-decoration: none;
 }
 
-#home-external-nav a:visited{
+#home-external-nav a:visited {
   color: #aaa;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -56,7 +60,7 @@ html, body {
   text-decoration: none;
 }
 
-#home-external-nav a:hover{
+#home-external-nav a:hover {
   color: #333;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -65,13 +69,13 @@ html, body {
   text-decoration: none;
 }
 
-#home-external-nav i{
+#home-external-nav i {
   margin: 0;
   height: 15px;
 }
 
 /* BODY */
-#p1 { 
+#p1 {
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -79,10 +83,10 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   min-width: 320px;
 }
 
@@ -92,22 +96,24 @@ html, body {
   font-family: 'GothamLight', sans-serif;
 }
 
-#article-name { 
-	font-family: 'GothamBold', sans-serif;
-  height: 100px; 
-  position: absolute; 
-  text-align: center; 
-  top: 40%; 
+#article-name {
+  font-family: 'GothamBold', sans-serif;
+  height: 100px;
+  position: absolute;
+  text-align: center;
+  top: 40%;
   width: 100%;
-  color:white; 
+  color: white;
   font-size: 110px;
 }
+
 #article-triangles {
   position: absolute;
-  top:40%;
+  top: 40%;
   width: 100%;
   text-align: center;
 }
+
 #article-triangles-img {
   width: 600px;
   height: auto;
@@ -117,46 +123,49 @@ html, body {
   -moz-transform: rotate(0deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
-#p2 { 
-	color:black;
-	background-color: white;
-  min-height: 5800px; 
-  height: 100%; 
-  margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
+
+#p2 {
+  color: black;
+  background-color: white;
+  min-height: 6050px;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
   position: relative;
   /*for a shadow separating sections*/
-  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.8);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
   /*box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
 }
+
 #p2_head1 {
-	position: relative; 
-	font-family: 'GothamLight', sans-serif;
-	color:black;
-	text-align: center;
-	top:60px;
+  position: relative;
+  font-family: 'GothamLight', sans-serif;
+  color: black;
+  text-align: center;
+  top: 60px;
   font-size: 15px;
-} 
+}
 
 #p2_head2 {
-  position: relative; 
+  position: relative;
   font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
-  color:black;
+  color: black;
   text-align: center;
-  top:115px;
+  top: 115px;
   font-size: 20px;
   opacity: 0;
-} 
+}
+
 #p2_head3 {
-  position: relative; 
+  position: relative;
   font-family: Didot, “Didot LT STD”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
-  color:black;
+  color: black;
   text-align: center;
-  top:135px;
+  top: 135px;
   font-size: 20px;
   opacity: 0;
-} 
+}
 
 .box {
   height: 20%;
@@ -164,37 +173,42 @@ html, body {
   background-color: #000;
   position: relative;
 }
-#b1 { 
-  top:20%;
-  left:20%;
-}
-#b2 {
-  top:40%;
-  left: 40%;
-}
-#b3 {
-  top:60%;
-  left:60%;
+
+#b1 {
+  top: 20%;
+  left: 20%;
 }
 
-.grid{
+#b2 {
+  top: 40%;
+  left: 40%;
+}
+
+#b3 {
+  top: 60%;
+  left: 60%;
+}
+
+.grid {
   left: 50%;
   margin-left: -500px;
   position: absolute;
-  top:150px;
+  top: 150px;
   width: 1000px;
   height: auto;
   display: table-cell;
   margin-top: 250px;
 }
-.row{
+
+.row {
   display: inline-table;
   width: 100%;
   height: 400px;
   margin-top: 0px;
-  opacity:0;
+  opacity: 0;
 }
-.column{
+
+.column {
   margin: 0px;
   padding: 0px;
   font-family: 'GothamBold', sans-serif;
@@ -216,6 +230,7 @@ html, body {
   vertical-align: middle;
   margin-top: -20px;
 }
+
 #img-philips-shield {
   position: relative;
   width: 300px;
@@ -224,6 +239,7 @@ html, body {
   vertical-align: middle;
   margin-top: -20px;
 }
+
 #img-pebble2 {
   position: relative;
   width: 150px;
@@ -232,7 +248,8 @@ html, body {
   vertical-align: middle;
   margin-top: -20px;
 }
-#logo-pebble { 
+
+#logo-pebble {
   position: relative;
   width: 250px;
   height: auto;
@@ -241,7 +258,8 @@ html, body {
   margin-top: -20px;
   margin-right: -10px;
 }
-#logo-biomim { 
+
+#logo-biomim {
   position: relative;
   width: 330px;
   height: auto;
@@ -250,7 +268,8 @@ html, body {
   margin-top: -20px;
   margin-right: -10px;
 }
-#img-mc { 
+
+#img-mc {
   position: relative;
   width: 150px;
   height: auto;
@@ -259,7 +278,28 @@ html, body {
   margin-top: -20px;
   margin-left: 5px;
 }
-#logo-philips { 
+
+#logo-mgnr {
+  position: relative;
+  width: 230px;
+  height: auto;
+  line-height: 350px;
+  vertical-align: middle;
+  margin-top: -20px;
+  margin-right: -40px;
+}
+
+#img-mgnr {
+  position: relative;
+  width: 150px;
+  height: auto;
+  line-height: 350px;
+  vertical-align: middle;
+  margin-top: -20px;
+  margin-left: 5px;
+}
+
+#logo-philips {
   position: relative;
   width: 230px;
   height: auto;
@@ -268,7 +308,8 @@ html, body {
   margin-top: -20px;
   margin-right: -10px;
 }
-#amazon_logo{
+
+#amazon_logo {
   position: relative;
   width: 240px;
   height: auto;
@@ -276,6 +317,7 @@ html, body {
   vertical-align: middle;
   margin-top: 0px;
 }
+
 #amazon_img1 {
   position: relative;
   width: 230px;
@@ -284,14 +326,17 @@ html, body {
   vertical-align: middle;
   margin-top: -20px;
 }
-.text{
+
+.text {
   line-height: 20px;
 }
-.text2{
+
+.text2 {
   font-size: 32px;
 }
-#mit_logo{
-  width: 250px; 
+
+#mit_logo {
+  width: 250px;
   line-height: 350px;
   position: relative;
   vertical-align: middle;
@@ -308,48 +353,53 @@ html, body {
 }
 
 .footer {
-  bottom:0px;
+  bottom: 0px;
   position: absolute;
   height: 150px;
-  width:100%;
+  width: 100%;
 }
+
 #footer-image {
   position: absolute;
   top: 0;
-  width: 100px; 
+  width: 100px;
   height: auto;
   left: 50%;
   margin-left: -50px;
   margin-top: -60px;
 }
+
 #footer-text-container {
   position: absolute;
-  margin:0px;
-  padding:0px;
+  margin: 0px;
+  padding: 0px;
   height: 100px;
   width: 500px;
-  left:50%;
+  left: 50%;
   margin-left: -210px;
   margin-top: 25px;
   display: table-cell;
   table-layout: fixed;
 }
-.footer-text{
-  margin:0px;
-  padding:0px;
+
+.footer-text {
+  margin: 0px;
+  padding: 0px;
   margin-left: 0px;
   margin-right: 0px;
-  width:150px;
+  width: 150px;
   font-family: 'GothamLight', sans-serif;
   text-align: center;
   display: inline-block;
   line-height: 100px;
 }
-.footer-text a{
-  color:black;
+
+.footer-text a {
+  color: black;
   text-decoration: none;
 }
-.footer-text a:hover{
+
+.footer-text a:hover {
   padding-bottom: 15px;
   border-bottom: 1px solid black;
 }
