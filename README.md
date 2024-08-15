@@ -6,5 +6,3 @@ dependencies:
 * `fontawesome`
 
 started: 7/25/16
-
-updated: 7/23/24
