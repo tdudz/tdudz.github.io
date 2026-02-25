@@ -1,148 +1,282 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>tdudz</title>
-  <meta name="description" content="Personal Website">
-  <meta name="author" content="Tom Dudzik">
-  <meta name="keywords" content="tom dudzik">
-  <link rel="shortcut icon" href="./icons/triangles.gif">
-  <link href="./css/font-awesome.min.css" rel="stylesheet">
-  <link rel='shortcut icon' href='./icons/favicon.ico' type='image/x-icon' />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tom Dudzik</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: #073642;
+      background: #fdf6e3;
+      line-height: 1.7;
+      padding: 4rem 1.5rem;
+    }
+
+    main {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .name-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .intro {
+      font-size: 0.95rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .intro a {
+      color: #1a1a1a;
+      text-decoration: underline;
+      text-decoration-color: #ccc;
+      text-underline-offset: 2px;
+      transition: text-decoration-color 0.15s;
+    }
+
+    .intro a:hover {
+      text-decoration-color: #1a1a1a;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 1.75rem 0;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+
+    section {
+      margin-bottom: 1.75rem;
+    }
+
+    .item {
+      padding: 0.6rem 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      border-bottom: 1px solid #eee;
+    }
+
+    .item:first-of-type {
+      border-top: none;
+    }
+
+    .item a {
+      color: #1a1a1a;
+      text-decoration: underline;
+      text-decoration-color: #ccc;
+      text-underline-offset: 2px;
+      transition: text-decoration-color 0.15s;
+      font-weight: 400;
+    }
+
+    .item a:hover {
+      text-decoration-color: #1a1a1a;
+    }
+
+    .item .meta {
+      color: #888;
+      font-size: 0.88rem;
+    }
+
+    .item .desc {
+      color: #666;
+    }
+
+    .exp-item {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .exp-item:first-of-type {
+      border-top: none;
+    }
+
+    .exp-item .title {
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .exp-item .title a {
+      color: #1a1a1a;
+      text-decoration: underline;
+      text-decoration-color: #ccc;
+      text-underline-offset: 2px;
+      transition: text-decoration-color 0.15s;
+    }
+
+    .exp-item .title a:hover {
+      text-decoration-color: #1a1a1a;
+    }
+
+    .exp-item .subtitle {
+      color: #888;
+      font-size: 0.88rem;
+    }
+
+    .inv-item {
+      padding: 0.6rem 0;
+      font-size: 0.95rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .inv-item:first-of-type {
+      border-top: none;
+    }
+
+    .inv-item a {
+      color: #1a1a1a;
+      text-decoration: underline;
+      text-decoration-color: #ccc;
+      text-underline-offset: 2px;
+      transition: text-decoration-color 0.15s;
+      font-weight: 550;
+    }
+
+    .inv-item a:hover {
+      text-decoration-color: #1a1a1a;
+    }
+
+    .inv-item .desc {
+      color: #666;
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .links a {
+      color: #888;
+      text-decoration: none;
+      transition: color 0.15s;
+      display: flex;
+    }
+
+    .links a:hover {
+      color: #1a1a1a;
+    }
+
+    .links a svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+  </style>
 </head>
-
 <body>
-  <!-- Section #1 -->
-  <section id="p1">
-    <script src="./js/three.min.js"></script>
-    <script src="./js/Projector.js"></script>
-    <script src="./js/CanvasRenderer.js"></script>
-    <script src="./js/Bird.js"></script>
-    <script src="./js/Boid.js"></script>
-    <script src="./js/app.js"></script>
-
-    <h1>TOM DUDZIK</h1>
-    <div id="home-external-nav">
-      <a href="https://www.linkedin.com/in/tdudz" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a href="https://github.com/tdudz" target="_blank"><i class="fa fa-github"></i></a>
-      <a href="https://twitter.com/tom_dudzik" target="_blank"><i class="fa fa-twitter"></i></a>
-      <!-- <a href="http://stackoverflow.com/users/3758750/tdudz?tab=profile" target="_blank"><i class="fa fa-stack-overflow"></i></a> -->
-      <!-- <a href="https://soundcloud.com/tomdudzik" target="_blank"><i class="fa fa-soundcloud"></i></a> -->
-      <a href="mailto:tdudz97@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-      <a href="./resources/resume.pdf" target="_blank"><i class="fa fa-file-text"></i></a>
-    </div>
-  </section>
-
-  <!-- Section #2 -->
-  <section id="p2" data-speed="10" data-type="background">
-    <div id="p2_head1">| &nbsp;&nbsp; I N F O &nbsp;&nbsp; |</div>
-    <div id="p2_head3">Tom Dudzik // software engineer</div>
-    <!-- USE A GRID HERE -->
-    <div class="grid">
-      <div class="row">
-        <div class="column">&nbsp;</div>
-        <div class="column text"><img id="logo-pebble" src="./icons/MIT.jpg" alt="MIT"><i><b>computer
-              science</b></i><br>grad, M.Eng<br>class of 2020<br><br><br><i><b>computer science &
-              mathematics</b></i><br>undergrad, B.S.<br>class of 2019</div>
-        <div class="column text">&nbsp;</div>
-      </div>
-      <div class="row">
-        <div class="column">&nbsp;</div>
-        <div class="column text2">E X P E R I E N C E</div>
-        <div class="column">&nbsp;</div>
-      </div>
-      <div class="row">
-        <div class="column"><img id="logo-sln" src="./icons/ellipsis-logo.png" alt="ellipsis1"></div>
-        <div class="column"><img id="img-sln" src="./icons/ellipsis-img.jpeg" alt="ellipsis2"></div>
-        <div class="column text"><i><b>quantitative developer</b></i><br>high-frequency trading<br>sep 2024 - oct 2025
-        </div>
-      </div>
-      <div class="row">
-        <div class="column"><img id="logo-sln" src="./icons/sln-logo.png" alt="sln1"></div>
-        <div class="column"><img id="img-sln" src="./icons/sln-icon.jpg" alt="sln2"></div>
-        <div class="column text"><i><b>quantitative developer</b></i><br>high-frequency trading<br>jun 2023 - aug 2024
-        </div>
-      </div>
-      <div class="row">
-        <div class="column"><img id="logo-mgnr" src="./icons/mgnr2.png" alt="mgnr1"></div>
-        <div class="column"><img id="img-mgnr" src="./icons/mgnr1.png" alt="mgnr2"></div>
-        <div class="column text"><i><b>quantitative developer</b></i><br>high-frequency trading<br>mar 2021 - may 2023
-        </div>
-      </div>
-      <div class="row">
-        <div class="column"><img id="logo-biomim" src="./icons/vatic-logo.png" alt="vatic"></div>
-        <div class="column"><img id="img-mc" src="./icons/vatic-icon.png" alt="vatic"></div>
-        <div class="column text"><i><b>quantitative developer</b></i><br>high-frequency trading<br>sep 2020 - jan 2021
-        </div>
-      </div>
-      <div class="row">
-        <div class="column"><img id="logo-biomim" src="./icons/biomim.png" alt="mc"></div>
-        <div class="column"><img id="img-mc" src="./icons/mc.png" alt="mc"></div>
-        <div class="column text"><i><b>graduate student researcher</b></i><br>MIT mini cheetah<br>fall - summer 2020
-        </div>
-      </div>
-      <div class="row">
-        <div class="column"><img id="logo-pebble" src="./icons/zoox.png" alt="zoox"></div>
-        <div class="column"><img id="img-pebble1" src="./icons/zoox_car.png" alt="zoox"></div>
-        <div class="column text"><i><b>software engineering intern</b></i><br>perception<br>summer 2019</div>
-      </div>
-      <div class="row">
-        <div class="column"><img id="logo-pebble" src="./icons/jp2.png" alt="jp"></div>
-        <div class="column"><img id="img-pebble1" src="./icons/jp1.png" alt="jp"></div>
-        <div class="column text"><i><b>markets summer analyst</b></i><br>fx algorithmic trading<br>summer 2018</div>
-      </div>
-      <div class="row">
-        <div class="column text"><i><b>rus lab</b></i><br>Toyota-CSAIL<br>joint research center</div>
-        <div class="column"><img id="img-csail" src="./icons/csail1.png" alt="csail"></div>
-        <div class="column text"><i><b>undergrad researcher</b></i><br>autonomous vehicles<br>spring 2018</div>
-      </div>
-      <div class="row">
-        <div class="column"><img id="logo-pebble" src="./icons/blockstream-logo.png" alt="blockstream"></div>
-        <div class="column"><img id="img-pebble1" src="./icons/blockstream-emblem.png" alt="blockstream"></div>
-        <div class="column text"><i><b>software engineering intern</b></i><br>bitcoin core &amp; elements
-          sidechain<br>summer 2017</div>
-      </div>
-      <div class="row">
-        <div class="column"><img id="logo-philips" src="./icons/logo.png" alt="philips"></div>
-        <div class="column"><img id="img-philips-shield" src="./icons/philips-shield.png" alt="philips"></div>
-        <div class="column text"><i><b>machine learning intern</b></i><br>acute care solutions<br>summer 2016</div>
-      </div>
-      <div class="row">
-        <div class="column"><img id="amazon_logo" src="./icons/nasa2.jpg" alt="nasa"></div>
-        <div class="column"><img id="amazon_img1" src="./icons/basalt.png" alt="nasa"></div>
-        <div class="column text"><i><b>undergrad researcher</b></i><br>xGDS &amp; pextant API dev<br>winter - spring
-          2016</div>
-      </div>
-      <div class="row">
-        <div class="column"><img id="logo-pebble" src="./icons/yale.jpg" alt="yale"></div>
-        <div class="column"><img id="img-pebble1" src="./icons/medschool.png" alt="yale"></div>
-        <div class="column text"><i><b>biomedical research intern</b></i><br>discovery to cure<br>summer 2014</div>
-      </div>
-      <div class="row" style="height:100px;">
-        <div class="column text"><u><i><b>skills</b></i></u><br>python<br>rust<br>c/c++<br>js/ts<br>solidity<br><br>
-        </div>
-        <div class="column text"><u><i><b>relevant coursework</b></i></u><br>machine learning<br>computer vision<br>data
-          structures and algorithms<br>operating systems<br>probability and inference<br>theoretical stats<br></div>
-        <div class="column text"><u><i><b>hobbies</b></i></u><br>guitar<br>speedcubing<br>cycling<br>crossfit<br><br><br></div>
+  <main>
+    <div class="name-row">
+      <h1>Tom Dudzik</h1>
+      <div class="links">
+        <a href="mailto:tdudz97@gmail.com" title="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+        <a href="https://github.com/tdudz" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.1-.4-.6-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.2.9 2.4v3.5c0 .3.2.7.8.6A12 12 0 0012 .3"/></svg></a>
+        <a href="https://www.linkedin.com/in/tdudz" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="https://twitter.com/tom_dudzik" title="Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
       </div>
     </div>
 
-    <div class="footer">
-      <img id="footer-image" src="./icons/triangles.gif" alt="More to Come">
-      <div id="footer-text-container">
-        <div class="footer-text"><a href="https://github.com/tdudz">GITHUB</a></div>
-        <div class="footer-text" style="margin-left:-15px;margin-right:-25px;"><a
-            href="mailto:tdudz97@gmail.com">EMAIL</a></div>
-        <div class="footer-text"><a href="https://www.linkedin.com/in/tdudz">LINKEDIN</a></div>
+    <!-- <p class="intro">
+      Quantitative developer. Went to <a href="https://www.mit.edu/">MIT</a> for CS & Math, then spent 4+ years building algorithmic trading systems at crypto HFT firms in New York.
+    </p> -->
+
+    <p class="intro">
+      I grew up in Connecticut, went to <a href="https://www.mit.edu/">MIT</a>, worked on <a href="https://news.mit.edu/2019/mit-mini-cheetah-first-four-legged-robot-to-backflip-0304">robotic cheetahs</a>, and then spent 5 years building algorithmic trading systems at various quant firms in New York.
+    </p>
+
+    <hr>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="exp-item">
+        <div class="title">Quant Dev, <a href="https://www.ellipsislabs.xyz/">Ellipsis Labs</a></div>
+        <div class="subtitle">New York · 2024 - 2025</div>
+        <div class="subtitle">Built end-to-end perpetual futures trading infrastructure for internal trading team.</div>
       </div>
-    </div>
-  </section>
 
-  <link rel="stylesheet" href="./css/index.css">
-  <script src="./js/jquery.min.js"></script>
-  <script type="text/javascript" src="./js/index.js"></script>
+      <div class="exp-item">
+        <div class="title">Quant Dev, <a href="https://www.selini.capital/">Selini Capital</a></div>
+        <div class="subtitle">New York · 2023 - 2024</div>
+        <div class="subtitle">Led technical build-out of on-chain trading infrastructure in Rust, enabling automated execution of arbitrage strategies across several blockchains, achieving $500m+ in daily volume.</div>
+      </div>
 
+      <div class="exp-item">
+        <div class="title">Quant Dev, <a href="https://www.linkedin.com/company/mgnr-io/about/">MGNR</a></div>
+        <div class="subtitle">New York · 2021 - 2023</div>
+        <div class="subtitle">Carried out signal research, param tuning, and exchange integrations for crypto HFT strategies totaling $1b+ in daily volume; team cleared $120m+ PnL over 2021-2023.</div>
+      </div>
+
+      <div class="exp-item">
+        <div class="title">Quant Dev, <a href="https://www.vaticlabs.ai/">Vatic Labs</a></div>
+        <div class="subtitle">New York · 2020 - 2021</div>
+        <div class="subtitle">Worked on in-house quantitative research library and market data tools for processing live and historical data with a focus on post-trade analysis.</div>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>Publications & Patents</h2>
+
+      <div class="item">
+        <a href="https://doi.org/10.1109/iros45743.2020.9340701">Robust Autonomous Navigation of a Small-Scale Quadruped Robot in Real-World Environments</a>
+        <span class="meta">IEEE/RSJ IROS, 2020</span>
+      </div>
+
+      <div class="item">
+        <a href="https://patents.google.com/patent/US11157774B2/en">Depth Data Model Training with Upsampling, Losses and Loss Balancing</a>
+        <span class="meta">US Patent (Zoox), 2019</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Investments</h2>
+
+      <div class="inv-item">
+        <span>Proactive Labs</span>
+        <span class="desc"> · Stealth</span>
+      </div>
+
+      <div class="inv-item">
+        <a href="https://www.callbaba.com/">Baba Care</a>
+        <span class="desc"> · Patient advocate marketplace</span>
+      </div>
+
+      <div class="inv-item">
+        <a href="https://meridian.app/">Meridian</a>
+        <span class="desc"> · A personal agent for the modern investor</span>
+      </div>
+
+      <div class="inv-item">
+        <a href="https://www.monad.xyz">Monad</a>
+        <span class="desc"> · High-performance EVM blockchain built for scale</span>
+      </div>
+
+      <div class="inv-item">
+        <a href="https://atomicsemi.com/">Atomic Semi</a>
+        <span class="desc"> · American-made semiconductor fab</span>
+      </div>
+    </section>
+
+  </main>
 </body>
-
 </html>
