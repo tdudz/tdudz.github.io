@@ -28,6 +28,19 @@
       margin-bottom: 1rem;
     }
 
+    .name-left {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .headshot {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
     h1 {
       font-size: 1.8rem;
       font-weight: 700;
@@ -186,7 +199,10 @@
 <body>
   <main>
     <div class="name-row">
-      <h1>Tom Dudzik</h1>
+      <div class="name-left">
+        <img src="headshot.png" alt="Tom Dudzik" class="headshot">
+        <h1>Tom Dudzik</h1>
+      </div>
       <div class="links">
         <a href="mailto:tdudz97@gmail.com" title="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
         <a href="https://github.com/tdudz" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.1-.4-.6-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.9.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.2.9 2.4v3.5c0 .3.2.7.8.6A12 12 0 0012 .3"/></svg></a>
