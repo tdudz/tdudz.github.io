@@ -40,6 +40,7 @@ this Mac when started with `--background`.
 ```sh
 blender --python render_previews.py
 blender --python render_animations.py
+blender --python render_favicon.py
 python3 package_animations.py
 ```
 
