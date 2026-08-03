@@ -6,10 +6,12 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
 BUILD = ROOT / "build"
-OUTPUT = ROOT / "exports"
+ASSETS = ROOT.parents[1] / "assets" / "work-icons"
+PREVIEWS = ROOT / "previews"
 FRAME_COUNT = 96
 FRAME_SIZE = 168
-OUTPUT.mkdir(parents=True, exist_ok=True)
+ASSETS.mkdir(parents=True, exist_ok=True)
+PREVIEWS.mkdir(parents=True, exist_ok=True)
 
 requested = set(sys.argv[1:])
 for logo_dir in sorted((BUILD / "frames").iterdir()):
@@ -24,11 +26,11 @@ for logo_dir in sorted((BUILD / "frames").iterdir()):
         if frame.size != (FRAME_SIZE, FRAME_SIZE):
             raise RuntimeError(f"{logo_dir.name}: expected {FRAME_SIZE}px frames, found {frame.size}")
         sprite.paste(frame, (index * FRAME_SIZE, 0))
-    sprite.save(OUTPUT / f"{logo_dir.name}-sprite.webp", "WEBP", quality=90, method=6)
+    sprite.save(ASSETS / f"{logo_dir.name}-sprite.webp", "WEBP", quality=90, method=6)
 
-    frames[5].save(OUTPUT / f"{logo_dir.name}-poster.webp", "WEBP", quality=92, method=6)
+    frames[5].save(ASSETS / f"{logo_dir.name}-poster.webp", "WEBP", quality=92, method=6)
     frames[0].save(
-        OUTPUT / f"{logo_dir.name}-preview.webp",
+        PREVIEWS / f"{logo_dir.name}-preview.webp",
         "WEBP",
         save_all=True,
         append_images=frames[1:],

@@ -183,7 +183,7 @@ def build_logo(name):
             bpy.context.collection.objects.link(back)
         add_backing(root)
     root.rotation_euler[1] = math.radians(24)
-    root.rotation_euler[0] = math.radians(-4)
+    root.rotation_euler[0] = 0
     return root
 
 

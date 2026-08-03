@@ -6,7 +6,8 @@ Reproducible source and outputs for the five spinning Experience badges.
 
 - `source/`: supplied raster logos.
 - `vectors/`: Potrace SVGs consumed by Blender.
-- `exports/`: final posters, CSS sprite sheets, and animated previews.
+- `../../assets/work-icons/`: final posters and CSS sprite sheets used by the site.
+- `previews/`: animated WebPs for reviewing the generated rotations.
 - `build/`: generated masks, PNG frames, and stills; ignored by Git.
 
 Each final sprite is 96 frames at 168×168 pixels, packed horizontally into a
