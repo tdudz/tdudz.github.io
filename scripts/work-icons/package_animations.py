@@ -6,7 +6,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent
 BUILD = ROOT / "build"
-ASSETS = ROOT.parents[1] / "assets" / "work-icons"
+ASSETS = ROOT.parents[1] / "assets"
 PREVIEWS = ROOT / "previews"
 FRAME_COUNT = 96
 FRAME_SIZE = 168
