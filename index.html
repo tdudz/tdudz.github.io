@@ -115,6 +115,10 @@
     }
 
     .exp-item {
+      display: grid;
+      grid-template-columns: 56px minmax(0, 1fr);
+      gap: 1rem;
+      align-items: start;
       padding: 0.6rem 0;
       border-bottom: 1px solid #eee;
     }
@@ -143,6 +147,32 @@
     .exp-item .subtitle {
       color: #888;
       font-size: 0.88rem;
+    }
+
+    .exp-badge {
+      position: relative;
+      width: 56px;
+      height: 56px;
+      overflow: hidden;
+    }
+
+    .exp-badge-strip {
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 9600%;
+      height: 100%;
+      background: var(--sprite) 0 0 / 100% 100% no-repeat;
+      animation: work-badge-spin 4s steps(96) infinite;
+      will-change: transform;
+    }
+
+    @keyframes work-badge-spin {
+      to { transform: translateX(-100%); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .exp-badge { background: var(--poster) center / 100% 100% no-repeat; }
+      .exp-badge-strip { display: none; }
     }
 
     .inv-item {
@@ -233,27 +263,48 @@
       <h2>Experience</h2>
 
       <div class="exp-item">
-        <div class="title">Quant Dev, <a href="https://www.ellipsislabs.xyz/">Ellipsis Labs</a></div>
-        <div class="subtitle">New York · 2024 - 2025</div>
-        <div class="subtitle">Built end-to-end perpetual futures trading infrastructure for internal trading team. Core contributor to SVM layer 2 blockchain: cross-chain bridge infra, VM runtime optimizations, and an on-chain smart order router.</div>
+        <span class="exp-badge" aria-hidden="true" style="--poster: url('scripts/work-icons/exports/mschf-poster.webp'); --sprite: url('scripts/work-icons/exports/mschf-sprite.webp')"><span class="exp-badge-strip"></span></span>
+        <div>
+          <div class="title">Eng, <a href="https://www.mschf.com/">MSCHF</a></div>
+          <div class="subtitle">New York · Present</div>
+          <div class="subtitle">Currently working on a project with MSCHF in NYC.</div>
+        </div>
       </div>
 
       <div class="exp-item">
-        <div class="title">Quant Dev, <a href="https://www.selini.capital/">Selini Capital</a></div>
-        <div class="subtitle">New York · 2023 - 2024</div>
-        <div class="subtitle">Led technical build-out of on-chain trading infrastructure in Rust, enabling automated execution of arbitrage strategies across several blockchains, achieving $500m+ in daily volume.</div>
+        <span class="exp-badge" aria-hidden="true" style="--poster: url('scripts/work-icons/exports/ellipsis-poster.webp'); --sprite: url('scripts/work-icons/exports/ellipsis-sprite.webp')"><span class="exp-badge-strip"></span></span>
+        <div>
+          <div class="title">Quant Dev, <a href="https://www.ellipsislabs.xyz/">Ellipsis Labs</a></div>
+          <div class="subtitle">New York · 2024 - 2025</div>
+          <div class="subtitle">Built end-to-end perpetual futures trading infrastructure for internal trading team. Core contributor to SVM layer 2 blockchain: cross-chain bridge infra, VM runtime optimizations, and an on-chain smart order router.</div>
+        </div>
       </div>
 
       <div class="exp-item">
-        <div class="title">Quant Dev, <a href="https://www.linkedin.com/company/mgnr-io/about/">MGNR</a></div>
-        <div class="subtitle">New York · 2021 - 2023 (acquihired by Selini post-FTX)</div>
-        <div class="subtitle">Carried out signal research, param tuning, and exchange integrations for crypto HFT strategies totaling $1b+ in daily volume; team cleared $120m+ PnL over 2021-2023.</div>
+        <span class="exp-badge" aria-hidden="true" style="--poster: url('scripts/work-icons/exports/selini-poster.webp'); --sprite: url('scripts/work-icons/exports/selini-sprite.webp')"><span class="exp-badge-strip"></span></span>
+        <div>
+          <div class="title">Quant Dev, <a href="https://www.selini.capital/">Selini Capital</a></div>
+          <div class="subtitle">New York · 2023 - 2024</div>
+          <div class="subtitle">Led technical build-out of on-chain trading infrastructure in Rust, enabling automated execution of arbitrage strategies across several blockchains, achieving $500m+ in daily volume.</div>
+        </div>
       </div>
 
       <div class="exp-item">
-        <div class="title">Quant Dev, <a href="https://www.vaticlabs.ai/">Vatic Labs</a></div>
-        <div class="subtitle">New York · 2020 - 2021</div>
-        <div class="subtitle">Worked on in-house quantitative research library and market data tools for processing live and historical data with a focus on post-trade analysis.</div>
+        <span class="exp-badge" aria-hidden="true" style="--poster: url('scripts/work-icons/exports/mgnr-poster.webp'); --sprite: url('scripts/work-icons/exports/mgnr-sprite.webp')"><span class="exp-badge-strip"></span></span>
+        <div>
+          <div class="title">Quant Dev, <a href="https://www.linkedin.com/company/mgnr-io/about/">MGNR</a></div>
+          <div class="subtitle">New York · 2021 - 2023 (acquihired by Selini post-FTX)</div>
+          <div class="subtitle">Carried out signal research, param tuning, and exchange integrations for crypto HFT strategies totaling $1b+ in daily volume; team cleared $120m+ PnL over 2021-2023.</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <span class="exp-badge" aria-hidden="true" style="--poster: url('scripts/work-icons/exports/vatic-poster.webp'); --sprite: url('scripts/work-icons/exports/vatic-sprite.webp')"><span class="exp-badge-strip"></span></span>
+        <div>
+          <div class="title">Quant Dev, <a href="https://www.vaticlabs.ai/">Vatic Labs</a></div>
+          <div class="subtitle">New York · 2020 - 2021</div>
+          <div class="subtitle">Worked on in-house quantitative research library and market data tools for processing live and historical data with a focus on post-trade analysis.</div>
+        </div>
       </div>
 
     </section>
