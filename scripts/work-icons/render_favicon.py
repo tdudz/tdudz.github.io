@@ -16,8 +16,8 @@ reset_scene()
 setup_studio()
 
 scene = bpy.context.scene
-scene.render.resolution_x = 512
-scene.render.resolution_y = 512
+scene.render.resolution_x = 64
+scene.render.resolution_y = 64
 scene.camera.data.ortho_scale = 2.75
 scene.view_settings.view_transform = "Standard"
 scene.view_settings.look = "Medium High Contrast"

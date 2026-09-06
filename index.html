@@ -53,7 +53,7 @@
       margin-bottom: 0.5rem;
     }
 
-    .intro a {
+    .intro a, .item a, .exp-item .title a, .inv-item a {
       color: #1a1a1a;
       text-decoration: underline;
       text-decoration-color: #ccc;
@@ -61,7 +61,7 @@
       transition: text-decoration-color 0.15s;
     }
 
-    .intro a:hover {
+    .intro a:hover, .item a:hover, .exp-item .title a:hover, .inv-item a:hover {
       text-decoration-color: #1a1a1a;
     }
 
@@ -88,30 +88,13 @@
       border-bottom: 1px solid #eee;
     }
 
-    .item:first-of-type {
-      border-top: none;
-    }
-
     .item a {
-      color: #1a1a1a;
-      text-decoration: underline;
-      text-decoration-color: #ccc;
-      text-underline-offset: 2px;
-      transition: text-decoration-color 0.15s;
       font-weight: 400;
-    }
-
-    .item a:hover {
-      text-decoration-color: #1a1a1a;
     }
 
     .item .meta {
       color: #888;
       font-size: 0.88rem;
-    }
-
-    .item .desc {
-      color: #666;
     }
 
     .exp-item {
@@ -123,25 +106,9 @@
       border-bottom: 1px solid #eee;
     }
 
-    .exp-item:first-of-type {
-      border-top: none;
-    }
-
     .exp-item .title {
       font-weight: 500;
       font-size: 0.95rem;
-    }
-
-    .exp-item .title a {
-      color: #1a1a1a;
-      text-decoration: underline;
-      text-decoration-color: #ccc;
-      text-underline-offset: 2px;
-      transition: text-decoration-color 0.15s;
-    }
-
-    .exp-item .title a:hover {
-      text-decoration-color: #1a1a1a;
     }
 
     .exp-item .subtitle {
@@ -181,21 +148,8 @@
       border-bottom: 1px solid #eee;
     }
 
-    .inv-item:first-of-type {
-      border-top: none;
-    }
-
     .inv-item a {
-      color: #1a1a1a;
-      text-decoration: underline;
-      text-decoration-color: #ccc;
-      text-underline-offset: 2px;
-      transition: text-decoration-color 0.15s;
       font-weight: 550;
-    }
-
-    .inv-item a:hover {
-      text-decoration-color: #1a1a1a;
     }
 
     .inv-item .desc {
@@ -230,7 +184,7 @@
   <main>
     <div class="name-row">
       <div class="name-left">
-        <img src="headshot.png" alt="Tom Dudzik" class="headshot">
+        <img src="assets/headshot.png" alt="Tom Dudzik" class="headshot">
         <h1>Tom Dudzik</h1>
       </div>
       <div class="links">
@@ -240,10 +194,6 @@
         <a href="https://twitter.com/tom_dudzik" title="Twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
       </div>
     </div>
-
-    <!-- <p class="intro">
-      Quantitative developer. Went to <a href="https://www.mit.edu/">MIT</a> for CS & Math, then spent 4+ years building algorithmic trading systems at crypto HFT firms in New York.
-    </p> -->
 
     <p class="intro">
       I grew up in Connecticut, went to <a href="https://www.mit.edu/">MIT</a>, worked on <a href="https://news.mit.edu/2019/mit-mini-cheetah-first-four-legged-robot-to-backflip-0304">robotic cheetahs</a>, and then spent 5 years building algorithmic trading systems at various quant firms in New York.
@@ -352,7 +302,7 @@
       </div>
 
       <div class="inv-item">
-        <a href="https://fab2.com/">fab2</a>
+        <a href="https://fab2.com/">Fab2</a>
         <span class="desc"> · American-made semiconductor fab</span>
       </div>
     </section>
