@@ -13,7 +13,7 @@ from render_previews import BUILD, build_logo, reset_scene, setup_studio
 FRAMES = BUILD / "frames"
 FRAME_COUNT = 96
 FRAME_SIZE = 168
-ALL_LOGOS = ("ellipsis", "selini", "mgnr", "vatic", "mschf")
+ALL_LOGOS = ("ellipsis", "selini", "mgnr", "vatic", "mschf", "sail")
 LOGOS = tuple(name for name in sys.argv if name in ALL_LOGOS) or ALL_LOGOS
 
 for logo_name in LOGOS:

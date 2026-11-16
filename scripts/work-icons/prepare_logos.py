@@ -15,11 +15,11 @@ def save_mask(name, mask):
     Image.fromarray(pixels, mode="L").convert("1").save(OUTPUT / f"{name}.pbm")
 
 
-for name in ("ellipsis", "selini", "mgnr", "mschf", "vatic"):
+for name in ("ellipsis", "selini", "mgnr", "mschf", "vatic", "sail"):
     image = np.asarray(Image.open(SOURCE / f"{name}.png").convert("RGBA"))
     rgb, alpha = image[..., :3], image[..., 3]
 
-    if name in ("ellipsis", "selini"):
+    if name in ("ellipsis", "selini", "sail"):
         save_mask(name, (rgb.mean(axis=2) > 150) & (alpha > 128))
     elif name == "mgnr":
         save_mask(name, (rgb.mean(axis=2) < 100) & (alpha > 128))

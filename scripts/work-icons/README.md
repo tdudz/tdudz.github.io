@@ -1,6 +1,6 @@
 # Work icon generator
 
-Reproducible source and outputs for the five spinning Experience badges.
+Reproducible source and outputs for the spinning Experience badges.
 
 ## Contents
 
@@ -23,6 +23,7 @@ Each final sprite is 96 frames at 168×168 pixels, packed horizontally into a
 
 ```sh
 python3 prepare_logos.py
+potrace build/sail.pbm -s -o vectors/sail.svg --turdsize 2 --alphamax 1 --opttolerance 0.2
 potrace build/ellipsis.pbm -s -o vectors/ellipsis.svg --turdsize 2 --alphamax 1 --opttolerance 0.2
 potrace build/selini.pbm -s -o vectors/selini.svg --turdsize 2 --alphamax 1 --opttolerance 0.2
 potrace build/mgnr.pbm -s -o vectors/mgnr.svg --turdsize 2 --alphamax 1 --opttolerance 0.2

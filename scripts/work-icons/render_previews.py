@@ -13,6 +13,8 @@ PREVIEWS.mkdir(parents=True, exist_ok=True)
 
 
 PALETTES = {
+    "sail": ((0.90, 0.91, 0.93, 1), 0.40, 0.20),
+    "sail-blue": ((0.024, 0.057, 0.206, 1), 0.55, 0.20),
     "ellipsis": ((0.035, 0.045, 0.065, 1), 0.92, 0.16),
     "selini": ((0.72, 0.82, 0.92, 1), 0.65, 0.16),
     "mgnr": ((0.025, 0.03, 0.04, 1), 0.95, 0.14),
@@ -111,13 +113,13 @@ def parent_to_root(objects, name):
     return root
 
 
-def add_backing(root):
+def add_backing(root, name, mat_name):
     bpy.ops.mesh.primitive_cube_add(location=(0, 0, -0.09))
     backing = bpy.context.object
-    backing.name = "mschf-backing"
+    backing.name = f"{name}-backing"
     backing.dimensions = (2.28, 2.28, 0.24)
     bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
-    backing.data.materials.append(material("mschf-yellow"))
+    backing.data.materials.append(material(mat_name))
     bevel = backing.modifiers.new("soft corners", "BEVEL")
     bevel.width = 0.2
     bevel.segments = 8
@@ -141,7 +143,7 @@ def add_light(name, location, energy, size, color):
 
 def setup_studio():
     scene = bpy.context.scene
-    scene.render.engine = "BLENDER_EEVEE"
+    scene.render.engine = "BLENDER_EEVEE_NEXT" if bpy.app.version < (5, 0, 0) else "BLENDER_EEVEE"
     scene.render.resolution_x = 224
     scene.render.resolution_y = 224
     scene.render.resolution_percentage = 100
@@ -171,26 +173,26 @@ def build_logo(name):
         objects = normalize(objects, 2.05)
     else:
         objects = import_mark(name, name)
-        objects = normalize(objects, 1.45 if name == "mschf" else 2.12)
+        objects = normalize(objects, {"mschf": 1.45, "sail": 1.53}.get(name, 2.12))
 
     root = parent_to_root(objects, name)
-    if name == "mschf":
+    if name in ("mschf", "sail"):
         for obj in objects:
             obj.location.z = 0.16
             back = obj.copy()
             back.data = obj.data.copy()
-            back.name = "mschf-logo-back"
+            back.name = f"{name}-logo-back"
             back.location.z = -0.34
             back.parent = root
             bpy.context.collection.objects.link(back)
-        add_backing(root)
+        add_backing(root, name, "sail-blue" if name == "sail" else "mschf-yellow")
     root.rotation_euler[1] = math.radians(24)
     root.rotation_euler[0] = 0
     return root
 
 
 if __name__ == "__main__":
-    for logo_name in ("ellipsis", "selini", "mgnr", "vatic", "mschf"):
+    for logo_name in ("ellipsis", "selini", "mgnr", "vatic", "mschf", "sail"):
         reset_scene()
         setup_studio()
         build_logo(logo_name)
